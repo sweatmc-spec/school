@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+
+    </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .header{
+        background-color: aqua;
+        height: 200px;
+        text-align: center;
+        font-size: 100px;
+        color: black;
+    }
+    .box{
+        position: relative;
+        border: 5px solid;
+        height: 480px;
+        width: 30%;
+        left: 650px;
+        top: 100px;
+        border-radius: 10px;
+    }
+    .im1{
+        position: absolute;
+        object-fit: cover;
+        width: 100px;
+        top: 10px;
+    }
+    .h1{
+        font-size: 50px;
+        transform: translate(30%, 50%);
+}
+.line1{
+    border: 1px solid;
+    transform: translate(0%, 2900%);
+}
+.button1{
+    height: 120px;
+    transform: translate(0%, -52%);
+}
+    .im2{
+        position: absolute;
+        object-fit: cover;
+        width: 120px;
+        top: 130px;
+        left: -10px;
+    }
+    .h2{
+        font-size: 50px;
+        transform: translate(30%, -50%);
+    }
+    .line2{
+        border: 1px solid;
+    transform: translate(0%, 200%);
+}
+.button2{
+    height: 120px;
+    transform: translate(0%, -98%);
+}
+.im3{
+    position: absolute;
+    object-fit: cover;
+    width: 100px;
+    top: 250px;
+    left: 5px;
+}
+.h3{
+    font-size: 50px;
+    transform: translate(30%, -150%);
+}
+    .line3{
+    border: 10px solid;
+    transform: translate(0%, 200%);
+}
+.button3{
+    height: 120px;
+    transform: translate(0%, -128%);
+}
+    .line3{
+        border: 1px solid;
+    transform: translate(0%, -2500%);
+}
+.notification-toggle {
+    margin-top: 20px;
+    transform: translate(105%, -465%);
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        bottom: -50px;
+        width: 130px;
+        height: 54px;
+        right: 180px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0; left: 0;
+        right: 0; bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 46px; width: 46px;
+        left: 4px; bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(75px);
+    }
+
+    input:checked ~ .notif-label {
+        color: #2196F3;
+    }
+    .h4{
+    font-size: 40px;
+    transform: translate(5%, -300%);
+}
+</style>
+    <body>
+        <header>
+            <div class="header">Location</div>
+        </header>
+        
+        <div class="box">
+            <img class="im1" src="https://static.vecteezy.com/system/resources/previews/012/681/625/original/find-the-place-you-want-to-go-in-the-world-and-pinning-locations-to-guide-travel-free-png.png">
+            <h1 class="h1">Indonesia</h1>
+            <div class="line1"></div>
+            <a>
+                <div class="button1"></div>
+            </a>
+
+            <img class="im2" src="https://happytrailsasia.com/wp-content/uploads/2022/08/map-kalimantan.png">
+            <h1 class="h2">kalimantan</h1>
+            <div class="line2"></div>
+            <a href="">
+                <div class="button2"></div>
+            </a>
+
+            <img class="im3" src="https://clipartcraft.com/images/writing-clipart-handwriting-2.png">
+            <h1 class="h3">simpang pinoh</h1>
+            <div class="line3"></div>
+            <a href="">
+                <div class="button3"></div>
+            </a>
+
+                        <img class="im3" src="">
+            <h1 class="h4">location permission</h1>
+                        <div class="notification-toggle">
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</div>
+        </div>
+    </body>
+</html>

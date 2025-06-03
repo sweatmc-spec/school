@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+<style>
+    body{
+        background-color: black;
+    }
+.wrapper {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 10px solid #D9D9D9;
+  box-shadow: 1px 1px 10px   rgb(0, 0, 0);
+  background-size: 20%;
+  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+    background-color: #D9D9D9;
+
+}
+.text {
+    position: absolute;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "open sans", sans-serif;
+}
+.balance1{
+    position: absolute;
+        top: 19%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        font-family: "open sans", sans-serif;
+}
+.balance2{
+    position: absolute;
+        top: 41%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        font-family: "open sans", sans-serif;
+}
+.balance3{
+    position: absolute;
+        top: 59%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        font-family: "open sans", sans-serif;
+}
+.line1{
+    position: absolute;
+    background-color: white;
+    color: transparent;
+    width: 104%;
+    height: 1%;
+    top: 32%;
+    right: -9px;
+}
+.line2{
+    position: absolute;
+    background-color: white;
+    color: transparent;
+    width: 104%;
+    height: 1%;
+    top: 51%;
+    right: -9px;
+}
+.line3{
+    position: absolute;
+    background-color: white;
+    color: transparent;
+    width: 104%;
+    height: 1%;
+    top: 68%;
+    right: -9px;
+}
+.a{
+    position: absolute;
+    background: #faaa33;
+    color: black;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "open sans", sans-serif;
+        width: 45%;
+        height: 15%;
+        border-radius: 10px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;  
+        justify-content: center; 
+        text-align: center;
+        transition: hover 0.9 ease;
+}
+
+.a:hover{
+    background: rgb(255, 0, 0);
+    color: black;
+}
+.card1{
+    object-fit: cover;
+    width: 95px;
+    height: auto;
+    left: 0%;
+    top: 80px;
+    position: absolute;    
+}
+.card2{
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    left: -3%;
+    top: 180px;
+    position: absolute;    
+}
+.card3{
+    object-fit: cover;
+    width: 155px;
+    height: auto;
+    left: -2%;
+    top: 300px;
+    position: absolute;    
+}
+
+.circle-button1 {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  transform: translate(750%, 0%);
+}
+
+.circle-button1 input {
+  display: none; 
+}
+
+.circle-button1 span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  vertical-align: middle;
+}
+
+.circle-button1 input:checked + span {
+  background-color: green;
+}
+
+.circle-button2 {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  transform: translate(600%, 405%);
+}
+
+.circle-button2 input {
+  display: none; 
+}
+
+.circle-button2 span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  vertical-align: middle;
+}
+
+.circle-button2 input:checked + span {
+  background-color: green;
+}
+
+.circle-button2 {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.circle-button3 input {
+  display: none; 
+}
+
+.circle-button3 span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  vertical-align: middle;
+    transform: translate(450%, 745%);
+
+}
+
+.circle-button3 input:checked + span {
+  background-color: green;
+}
+.payment{
+    font-family: "open sans", sans-serif;
+    transform: translate(-0%, -90%);
+}
+        .error-box {
+            color: red;
+            border: 2px solid red;
+            padding: 10px;
+            margin: 20px auto;
+            width: 50%;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+         .error-box {
+      color: red;
+      border: 2px solid red;
+      padding: 10px;
+      margin: 20px auto;
+      width: 50%;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      animation: fadeOut 3s forwards;
+      animation-delay: 2s;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0 auto;
+        border-width: 0;
+        overflow: hidden;
+      }
+    }
+</style>
+    </head>
+
+    <body >
+        {% if message %}
+<div class="error-box">{{ message }}</div>
+{% endif %}
+
+        <header>
+        </header>
+        <main>
+            <form method="POST">
+            <div class="wrapper">
+                <h1 class="payment">payment method</h1>
+                <img class="card1" src="http://pluspng.com/img-png/paypal-png-paypal-logo-png-1000.png">
+                <label class="circle-button1">
+                <input type="radio" name="payment_method" value="paypal" hidden>
+                <span></span>
+                </label>
+                <h1 class="balance1">balance:0$</h1>
+                <div class="line1">line1</div>
+                <img class="card2" src="https://logodownload.org/wp-content/uploads/2019/09/google-pay-logo-0.png">
+                <label class="circle-button2">
+                <input type="radio" name="payment_method" value="google_pay" hidden>
+                <span></span>
+                </label>
+                <h1 class="balance2">balance:1.2M$</h1>
+                <div class="line2">line</div>
+                <img class="card3" src="https://cdn.prod.website-files.com/6047a9e35e5dc54ac86ddd90/638a66f53496040a4a1629b2_pyY_-KcDDLTxLW16brCFaa8QlHS6i-b_gfpqFwRD3y0.png">
+                <label class="circle-button3">
+                <input type="radio" name="payment_method" value="apple_pay" hidden>
+                <span></span>
+                </label>
+                <h1 class="balance3">balance:0$</h1>
+                <div class="line3">line</div>
+                <button type="submit" class="a">Pay </button>
+            </div></form>
+
+                </a>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

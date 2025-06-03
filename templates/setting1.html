@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+ 
+    </head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+    .header{
+        background-color: aqua;
+        border: none;
+        padding: 50px;
+        color: transparent;
+    }
+    .img1{
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    left: 10%;
+    transform: translate(-30%, -20%);
+    }
+    .head1{
+    width: 360px;
+    height: auto;
+    transform: translate(60%, -280%);
+    }
+
+    .logout_button {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 10%;
+        padding: 25px;
+        top: 90px;
+        left: 100px;
+        transform: translate(70%,70%);
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        transition: background-color 0.9s ease, color 0.3s ease;
+
+    }
+    .logout_button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    .color{
+    background-color: #FBFBFB;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 8%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-0%);
+    z-index: 2;
+}
+.first{
+    object-fit: cover;
+    width: 55px;
+    height: auto;
+    left: 10%;
+    bottom: 9px;
+    position: absolute;
+
+}
+.first img {
+    width: 55px;     
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+.first:hover img{
+    opacity: 1;
+}
+.first::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.5s ease;
+}
+.first:hover::after {
+    width: 100%;
+    opacity: 1.0;
+}
+.second{
+    object-fit: cover;
+    width: 64px;
+    height: auto;
+    left: 35%;
+    bottom: 9px;
+    position: absolute;
+}
+.second img {
+    width: 55px;     
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+.second:hover img{
+    opacity: 1;
+}
+.second::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.5s ease;
+}
+.second:hover::after {
+    width: 88%;
+}
+.third{
+    object-fit: cover;
+    width: 58px;
+    height: auto;
+    right: 35%;
+    bottom: 9px;
+    position: absolute;
+}
+.third img {
+    width: 55px;     
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+.third:hover img{
+    opacity: 1;
+}
+.third::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.5s ease;
+}
+.third:hover::after {
+    width: 87%;
+}
+.fourth{
+    object-fit: cover;
+    width: 54px;
+    height: auto;
+    right: 10%;
+    bottom: 9px;
+    position: absolute;
+}
+.fourth img {
+    width: 55px;     
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+.fourth:hover img{
+    opacity: 1;
+}
+.fourth::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.5s ease;
+}
+.fourth:hover::after {
+    width: 105%;
+}
+.profile{
+    border: 5px solid;
+    border-radius: 5px;
+    width: 30%;
+    height: 500px;
+    padding: 10px;
+    transform: translate(30%, 0%);
+}
+
+.profile_setting{
+    object-fit: cover;
+    width: 130px;
+    height: auto;
+    left: 10%;
+    transform: translate(0%, 0%);
+    }
+    
+.h1 {
+    transform: translate(30%, -180%);
+    font-size: 50px;
+}
+.line1{
+    border: 2px solid;
+    width: 104%;
+    transform: translate(-2%, -1000%);
+    
+}
+.inside1{
+    border: 1px solid;
+    margin-top: -210px;
+    height: 169px;
+    width: 104%;
+    transform: translate(-2%, 0%);
+    color: black;
+}
+.shield{
+    object-fit: cover;
+    width: 110px;
+    height: auto;
+    transform: translate(10%, 10%);
+    }
+    .h2 {
+    transform: translate(30%, -170%);
+    font-size: 50px;
+}
+.line2{
+    border: 2px solid;
+    width: 104%;
+    transform: translate(-2%, -1000%);
+}
+.inside2{
+    border: 1px solid;
+    margin-top: -210px;
+    height: 160px;
+    width: 104%;
+    transform: translate(-2%, 6%);
+    color: black;
+}
+.nontification{
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    transform: translate(-7%, 10%);
+    }
+    .h3 {
+    transform: translate(20%, -170%);
+    font-size: 50px;
+}
+
+.notification-toggle {
+    margin-top: 20px;
+    transform: translate(75%, -310%);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 54px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 46px; width: 46px;
+    left: 4px; bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(75px);
+}
+
+input:checked ~ .notif-label {
+    color: #2196F3;
+}
+
+/* this is for profile2*/
+
+.profile2{
+    border: 5px solid;
+    border-radius: 5px;
+    width: 30%;
+    height: 500px;
+    padding: 10px;
+    transform: translate(180%, -100%);
+}
+
+.line4{
+    border: 2px solid;
+    width: 104%;
+    transform: translate(-2%, -800%);
+}
+.inside3{
+    border: 1px solid;
+    margin-top: -210px;
+    height: 150px;
+    width: 104%;
+    transform: translate(-2%, 18%);
+    color: black;
+}
+.book{
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    transform: translate(-5%, 10%);
+    }
+.h4 {
+    transform: translate(30%, -170%);
+    font-size: 45px;
+}
+
+
+.inside5{
+    border: 1px solid;
+    margin-top: -210px;
+    height: 205px;
+    width: 104%;
+    transform: translate(-2%, 10%);
+    color: black;
+}
+.i{
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    transform: translate(-5%, 30%);
+    }
+.h5 {
+    transform: translate(30%, -130%);
+    font-size: 50px;
+}
+</style>
+<span class="color">
+    <a class="first" href="/home">
+<img src="https://openclipart.org/image/2400px/svg_to_png/217511/1429747035.png" alt="image">
+    </a>
+    <a class="second" href="/menu">
+<img src="https://icon-library.com/images/white-car-icon-png/white-car-icon-png-2.jpg">
+    </a>
+    <a class="third" href="/balance3">
+<img  src="https://pngimg.com/uploads/credit_card/credit_card_PNG158.png">
+    </a>
+    <a class="fourth">
+<img src=" https://static-00.iconduck.com/assets.00/settings-icon-1964x2048-8nigtrtt.png ">
+    </a>
+</span>
+    <body>
+        <header class="header">
+
+        <img class="img1" src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png">
+
+        </header>
+        <div class="head1">
+        <h1>NAME: Saitama</h1>
+        <h1>NUMBER: 0823****3000</h1>
+        </div>
+        <a href="/login">
+            <div class="logout_button">LOGOUT</div>
+        </a>
+        <div class="profile">
+                <img class="profile_setting" src="https://www.seekpng.com/png/full/510-5106056_settings-icon-png.png">
+                <h1 class="h1">profile settings </h1>
+                <div class="line1"></div>
+                <a href="/profil1">
+                <div class="inside1"></div>
+                </a>
+            <img class="shield" src="https://clipartcraft.com/images/shield-clipart-black-9.png">
+            <h1 class="h2">security settings</h1>
+            <div class="line2"></div>
+            <a href="/security">
+                <div class="inside2"></div>
+            </a>
+            <img class="nontification" src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3247957/notification-icon-md.png">
+            <h1 class="h3">nontification</h1>
+            <div class="notification-toggle">
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</div>
+
+        </div>
+
+        <div class="profile2">
+            <img class="profile_setting" src="https://icon-library.com/images/help-question-mark-icon/help-question-mark-icon-12.jpg">
+            <h1 class="h1">help center </h1>
+            <div class="line1"></div>
+            <a href="/help">
+            <div class="inside1"></div>
+            </a>
+            <img class="book" src="https://pngimg.com/d/book_PNG51047.png">
+            <h1 class="h4">terms & condition</h1>
+            <div class="line4"></div>
+            <a href="/terms">
+                <div class="inside3"></div>
+            </a>
+            <img class="i" src="https://www.thesslstore.com/blog/wp-content/uploads/2017/05/circle-with-i-1.png">
+            <h1 class="h5">privacy notice</h1>
+            <a href="/privacy">
+                <div class="inside5"></div>
+            </a>
+        </div>
+    </body>
+</html>

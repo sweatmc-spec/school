@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+
+    </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .header{
+        background-color: aqua;
+        height: 200px;
+        text-align: center;
+        font-size: 100px;
+        color: black;
+    }
+    .box{
+        position: relative;
+        border: 5px solid;
+        height: 380px;
+        width: 30%;
+        left: 650px;
+        top: 100px;
+        border-radius: 10px;
+    }
+    .im1{
+        position: absolute;
+        object-fit: cover;
+        width: 100px;
+        top: 10px;
+    }
+    .h1{
+        font-size: 50px;
+        transform: translate(30%, 50%);
+}
+.line1{
+    border: 1px solid;
+    transform: translate(0%, 2900%);
+}
+.button1{
+    height: 120px;
+    transform: translate(0%, -52%);
+}
+    .im2{
+        position: absolute;
+        object-fit: cover;
+        width: 120px;
+        top: 130px;
+        left: -10px;
+    }
+    .h2{
+        font-size: 50px;
+        transform: translate(30%, -50%);
+        color: blue;
+    }
+    .line2{
+        border: 1px solid;
+    transform: translate(0%, 200%);
+}
+.button2{
+    height: 120px;
+    transform: translate(0%, -98%);
+}
+.im3{
+    position: absolute;
+    object-fit: cover;
+    width: 100px;
+    top: 250px;
+    left: 5px;
+}
+.h3{
+    font-size: 40px;
+    transform: translate(30%, -200%);
+}
+    .line3{
+    border: 10px solid;
+    transform: translate(0%, 200%);
+}
+.button3{
+    height: 120px;
+    transform: translate(0%, -128%);
+}
+</style>
+    <body>
+        <header>
+            <div class="header">profile settings</div>
+        </header>
+        
+        <div class="box">
+            <img class="im1" src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png">
+            <h1 class="h1">username</h1>
+            <div class="line1"></div>
+            <a href="/profil">
+                <div class="button1"></div>
+            </a>
+
+            <img class="im2" src="https://static.vecteezy.com/system/resources/previews/020/009/615/original/email-and-mail-icon-black-free-png.png">
+            <h1 class="h2">Activate</h1>
+            <div class="line2"></div>
+            <a href="">
+                <div class="button2"></div>
+            </a>
+
+            <img class="im3" src="http://pluspng.com/img-png/png-location-big-image-png-1911.png">
+            <h1 class="h3">your location</h1>
+            <a href="/location">
+                <div class="button3"></div>
+            </a>
+        </div>
+    </body>
+</html>

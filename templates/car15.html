@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auto Slider with Indicators</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+    }
+
+    .slider {
+      
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(100vw * 8);
+      animation: stepScroll 32s steps(4) infinite;
+    }
+
+    .slide {
+      width: 100vw;
+      height: auto;
+      aspect-ratio: 16 / 5;
+      object-fit: cover;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    @keyframes stepScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-400vw);
+      }
+    }
+
+    .indicators {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .bar {
+      width: 20px;
+      height: 5px;
+      background-color: lightgray;
+      border-radius: 3px;
+      animation: highlight 32s steps(4) infinite;
+    }
+
+    .bar1 { animation-delay: 0s; }
+    .bar2 { animation-delay: 8s; }
+    .bar3 { animation-delay: 16s; }
+
+    @keyframes highlight {
+      0%   { background-color: blue; }
+      25%  { background-color: lightgray; }
+      100% { background-color: lightgray; }
+    }
+
+    .h1 {
+        position: relative;
+        text-align: left;
+        font-size: 50px;
+        top: 20px;
+    }
+    .smallh1 {
+        position: relative;
+        top: 15px;
+        font-size: 20px;
+    }
+    .rate-box{
+        position: relative;
+        padding: 0px 0px 130px 40px;
+        background-color: #fff6dc;
+        margin: 305px 0px 0px 300px;
+        width: 200px;
+        border: 1px solid ;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 50px;
+        color: #fff6dc;
+    }
+    .rate{
+        position: absolute;
+        top: -50px;
+        color: black;
+    }
+    .h11{
+        position: absolute;
+        color: black;
+        margin: 30px 2px ;
+        top: 10px;
+        font-size: 50px;
+    }
+    .icon {
+        position: absolute;
+        width: auto;
+        height: 55px;
+        right: 30px;
+        bottom: 55px;
+    }
+        .rate-box1{
+        position: relative;
+        padding: 0px 0px 130px 60px;
+        background-color: #fff6dc;
+        width: 200px;
+        top: -145px;
+        left: 850px;
+        border: 1px solid ;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 50px;
+        color: #fff6dc;
+    }
+    .rate1{
+        position: absolute;
+        top: -50px;
+        left: 35px;
+        color: black;
+        
+    }
+    .h2{
+        position: absolute;
+        color: black;
+        margin: 30px 25px ;
+        top: 10px;
+        font-size: 50px;
+    }
+    .rate-box2{
+        position: relative;
+        padding: 0px 0px 130px 60px;
+        background-color: #fff6dc;
+        width: 200px;
+        top: -285px;
+        left: 1350px;
+        border: 1px solid ;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 50px;
+        color: #fff6dc;
+    }
+    .rate2{
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        color: rgb(0, 0, 0);
+        
+    }
+    .h3{
+        position: absolute;
+        color: black;
+        left: 43px;
+        top: -75px;
+        font-size: 150px;
+    }
+
+    .money {
+        position: absolute;
+        color: green;
+        margin: 150px 0px 20px 0px;
+        left: 840px;
+        font-size: 70px;
+    }
+    .mm{
+        position: absolute;
+        font-size: 70px;
+        top: 100%;
+        left: 45%;
+    }
+    .discount{
+        position: absolute;
+        font-size: 50px;
+        margin: 150px;
+        left: 53%;
+        background: rgb(255, 166, 0);
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+    }
+ .btn {
+    position: absolute;
+  display: inline-block;
+  bottom: -580px;
+  left: 840px;
+  padding: 40px 70px;
+  background-color: #ff8800;  
+  color: white;
+  text-decoration: none;      
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000000;  
+}
+.img{
+  position: relative;
+  width: auto;
+  height: 100px;
+  margin: 10px;
+}
+.time {
+  position: absolute;
+  font-size: 20px;
+  top: 45px;
+  left: 15%;
+}
+.div{
+  position: relative;
+  border: 3px solid black;
+padding: 1px;
+bottom: -15px;
+
+}
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slide-track">
+      <img src="https://www.wallpaperflare.com/static/133/412/935/chevrolet-camaro-ss-red-wallpaper.jpg" class="slide" />
+      <img src="https://wallup.net/wp-content/uploads/2019/09/1029548-chevrolet-camaro-ss-convertible-cars-red-2016.jpg" class="slide" />
+
+      
+      <img src="https://www.wallpaperflare.com/static/133/412/935/chevrolet-camaro-ss-red-wallpaper.jpg" class="slide" />
+      <img src="https://wallup.net/wp-content/uploads/2019/09/1029548-chevrolet-camaro-ss-convertible-cars-red-2016.jpg" class="slide" />
+
+    </div>
+  </div>
+
+  <div class="indicators">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+  </div>
+
+  <h1 class="smallh1">Only two of them exist in the world and both are still with the Queen, with an estimated price tag of $13.5 million each. This makes them incredibly valuable but, as Select Car Leasing points out, it does not make them the most expensive royal cars in the world. That title still belongs to the bonkers Rolls-Royce Silver Spur II decked in 24-karat gold, owned by the Sultan of Brunei. According to research conducted by Select Car Leasing, the Sultan’s Rolls-Royce is the most expensive royal car in the world, thanks to its estimated price tag of $14 million. Of course, no one knows exactly how much the custom Silver Spur II cost because we’re talking here about one of the last absolute monarchs left in the world. It’s not like he’ll do press interviews to talk about it and take enthusiasts through the customization process.</h1>
+    <div class="div"><h1 class="time"> delivery between 10-15 days to arrive to ur place. if more longer we will give free voucher for next purchase</h1><img class="img" src="https://static.vecteezy.com/system/resources/previews/024/599/011/original/delivery-service-with-delivery-truck-png.png">
+    </div><h1 class="mm">Price:</h1>
+  <h1 class="money">272k$</h1>
+  <h1 class="discount">-15%</h1>
+  <div class="rate-box">1
+    <h1 class="h11"> 2.5</h1>
+    <img class="icon" src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <h1 class="rate">RATING</h1>
+  </div>
+    <div class="rate-box1">l
+    <h1 class="h2"> 0</h1>
+  <h1 class="rate1">Available</h1>
+  </div>
+    <div class="rate-box2">l
+    <h1 class="h3">...</h1>
+  <h1 class="rate2">Comment</h1>
+  </div>
+
+  <a  href="/purchase5" class="btn" type="button">Purchase</a>
+</body>
+</html>
